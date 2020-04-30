@@ -1,4 +1,6 @@
-#this code was written in python 3.7?
+#this code was written in python 3.7
+#this update is using python 3.8
+
 #import standard libraries that will be used in this code
 import argparse #command-line parsing
 import bisect
@@ -13,9 +15,9 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from typing import List
 
-log = logging.getLogger("geotag")
-log_sh = logging.StreamHandler(sys.stderr)
-log_sh.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+log = logging.getLogger("geotag") #return logger named "geotag"
+log_sh = logging.StreamHandler(sys.stderr) #send logging output to stderr stream
+log_sh.setFormatter(logging.Formatter("%(levelname)s: %(message)s")) #
 log.addHandler(log_sh)
 log.setLevel(logging.DEBUG)
 
