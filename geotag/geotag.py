@@ -1,6 +1,7 @@
-import argparse
+#import standard libraries that will be used in this code
+import argparse #command-line parsing
 import bisect
-import json
+import json #Java Script Object Notation, used as a lightweight data interchange format
 import logging
 import os
 import math
